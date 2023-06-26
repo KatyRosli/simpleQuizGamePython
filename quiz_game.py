@@ -1,4 +1,4 @@
-print("Welcome to my computer qiz!")
+print("Welcome to my computer quiz!")
 
 # note: there's a space so user can type after the question mark
 playing = input("Do you want to play? ")
@@ -43,3 +43,4 @@ else:
 
 # convert number to string
 print("You got " + str(score) + " questions correct!")
+print("You got " + str((score / 4) * 100) + " %. ")
