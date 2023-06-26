@@ -16,3 +16,21 @@ if answer == "central procession unit":
     print('Correct!')
 else:
     print('Incorrect')
+
+answer = input("What does GPU stand for? ")
+if answer == "graphics procession unit":
+    print('Correct!')
+else:
+    print('Incorrect')
+
+answer = input("What does RAM stand for? ")
+if answer == "random access memory":
+    print('Correct!')
+else:
+    print('Incorrect')
+
+answer = input("What does PSU stand for? ")
+if answer == "power supply":
+    print('Correct!')
+else:
+    print('Incorrect')
