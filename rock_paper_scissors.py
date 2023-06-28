@@ -38,5 +38,6 @@ while True:
         print("You lost")
         computer_wins += 1
     
-
-print("Bye bye")
+print("You won", user_wins, "times.")
+print("The computer won", computer_wins, "times.")
+print("Thank you for playing:) Bye bye!")
