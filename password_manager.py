@@ -2,7 +2,14 @@ master_pwd = input("what is the master password? ")
 
 # this is a function
 def view():
-    pass
+    # Read Only (‘r’): Open text file for reading. 
+    # The handle is positioned at the beginning of the file. 
+    # If the file does not exists, raises the I/O error. 
+    # This is also the default mode in which a file is opened. 
+    with open('passswords.txt', 'r') as f:
+        # using for loop
+        for line in f.readlines():
+            print(line)
 
 def add():
     name = input('Account Name: ')
@@ -15,7 +22,7 @@ def add():
     # The data being written will be inserted at the end, after the existing data.
     with open('passswords.txt', 'a') as f:
         # file name is f
-        f.write(name + "|" + pwd)
+        f.write(name + "|" + pwd + "\n")
 
 
 while True:
