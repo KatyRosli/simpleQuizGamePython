@@ -9,7 +9,12 @@ def view():
     with open('passswords.txt', 'r') as f:
         # using for loop
         for line in f.readlines():
-            print(line)
+            # rstrip means removes any trailing characters (characters at the end a string), 
+            # space is the default trailing character to remove
+            data = line.rstrip()
+            # this means it will remove "|" 
+            user, passw = data.split("|")
+            print("User:", user, "| Password:", passw)
 
 def add():
     name = input('Account Name: ')
@@ -18,7 +23,7 @@ def add():
     # when using 'with', it opens the file and then it automatically closes the file once we are done
     # Append Only (‘a’): Open the file for writing. 
     # The file is created if it does not exist. 
-    # The handle is positioned at the end of the file. 
+    # The handle is positioned at the end of the file.
     # The data being written will be inserted at the end, after the existing data.
     with open('passswords.txt', 'a') as f:
         # file name is f
