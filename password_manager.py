@@ -1,4 +1,16 @@
+from cryptography.fernet import Fernet
+
 master_pwd = input("what is the master password? ")
+
+'''
+# this is a function that creates a key file
+def write_key():
+    key = Fernet.generate_key()
+    # by default, the open() function opens a file in text format. 
+    # As a result, the "wb" mode opens the file in binary format for writing
+    with open("key.key", "wb") as key_file:
+        key_file.write(key) '''
+
 
 # this is a function
 def view():
